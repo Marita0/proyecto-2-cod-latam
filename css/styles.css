@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    ;
+    color: rgb(62, 62, 62);
+    line-height: 1.2;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-size: 18px;
+    /* background-image: url(img/banner.png) */
+
+}
+
+h1 {
+    text-align: center;
+    /* padding: 5% 5% 5% 0; */
+    font-size: 36px;
+    color: #1f8c7c;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    box-shadow: 0px 1px 10px rgba(34, 34, 34, 0.3);
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* #logo {
+    font-family: pacifico;
+    color: #36163f;
+} */
+
+nav {
+    color: rgb(255, 252, 249);
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffbd77;
+}
+
+#img1 {
+    max-width: 100%;
+    width: 400px;
+    padding: 2%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#img1:hover {
+    cursor: pointer;
+}
+
+/* #img1:active {
+    transform: scale(0.9);
+} */
+
+/* #logo:active {
+    transform: scale(0.9);
+} */
+
+#link-behance {
+    font-weight: 500;
+    color: #3ea394;
+}
+
+#link-behance:hover {
+    color: #4ed6c2;
+}
+
+#contacto {
+    max-width: 500px;
+}
+
+.caja-inicio,
+.caja-contacto {
+    padding: 90px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.caja-inicio {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.caja-contacto {
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+article {
+    background: #fde6c1;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.button {
+    height: 40px;
+    padding: 7px 20px;
+    margin-left: 0;
+    background-color: #36ab99;
+    border-radius: 20px;
+    color: aliceblue;
+    width: max-content;
+    font-size: 20px;
+}
+
+.button:hover {
+    color: #36ab99;
+    background: transparent;
+    border: 1px solid #36ab99;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+i {
+    padding: 20px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #ffbd77;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    padding: 5%;
+    text-align: center;
+    color: #f9f9f9;
+    background-color: #36ab99;
+}
+
+.active {
+    background-color: #ffddb9;
+    border-radius: 12px;
+    padding: 8px 20px;
+}
+
+main>section.caja-inicio>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main>section.caja-inicio>div>p {
+    text-align: center;
+}
+
+@media (orientation: landscape) {
+    .caja-inicio {
+        flex-direction: row;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    main>section.caja-inicio>div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    main>section.caja-inicio>div>p {
+        text-align: start;
+    }
+
+}
+
